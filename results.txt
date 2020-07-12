@@ -1,0 +1,12 @@
+OS:           Linux
+architecture: AMD64
+SIMD:         X86 SSE2
+Compiler:     g++ v9.3.0
+libc:         GNU Standard C++ Library
+stdlibc:      GNU Standard C Library v2.31.0
+
+|               ns/op |                op/s |    err% |     total | benchmark
+|--------------------:|--------------------:|--------:|----------:|:----------
+|          117,344.09 |            8,521.95 |    0.2% |      0.00 | `increment operator[]`
+|            8,366.70 |          119,521.49 |    0.1% |      0.00 | `assign std::count()`
+|            6,472.16 |          154,507.96 |    0.2% |      0.00 | `use array for counting`
